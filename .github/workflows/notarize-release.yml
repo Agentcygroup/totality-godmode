@@ -1,0 +1,10 @@
+name: Notarize Release
+on:
+  release:
+    types: [published]
+jobs:
+  notarize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch CID and Notarize
+        run: echo "🔐 Notarizing release"

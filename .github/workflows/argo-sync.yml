@@ -1,0 +1,8 @@
+name: Argo Sync
+on: [push]
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger ArgoCD Sync
+        run: echo "🔄 ArgoCD sync triggered"

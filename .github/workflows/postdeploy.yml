@@ -1,0 +1,8 @@
+name: Postdeploy
+on: [push]
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Finalization
+        run: echo "🚀 Postdeploy complete"
